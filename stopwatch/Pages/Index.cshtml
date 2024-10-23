@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+    <div class="stopwatch-container">
+        <h1>Stopwatch</h1>
+        <div class="display" id="display">00:00:00</div>
+
+        <div class="controls">
+            <button id="startStopBtn" onclick="startStop()">Start</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+            <button id="lapBtn" onclick="recordLap()">Lap</button>
+        </div>
+
+        <div class="laps">
+            <h2>Laps</h2>
+            <ul id="lapsList"></ul>
+        </div>
+    </div>
+
+    <script src="site.js"></script> <!-- Link to JavaScript file -->
+</body>
